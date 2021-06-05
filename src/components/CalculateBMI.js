@@ -34,7 +34,7 @@ function CalculateBMI(props) {
   }
 
   useEffect(() => {
-    if (bmi == 0) {
+    if (bmi === 0) {
       setStatus("");
       setBmi("");
     } else if (bmi <= 18.5) {
