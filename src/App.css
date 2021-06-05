@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+html,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    background-color: rgba(253, 210, 130, .5);
+    border-radius: 25px;
+    padding: 40px 20px;
+    margin-top: 6vh;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 12vh;
+}
+
+.mainContainer:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title-calculate {
+    padding-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.calcButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calcButton div {
+    margin-top: 15px;
+}
+
+.infoDiv {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.infobox {
+    margin: 4vw;
+    padding: 10px;
+    font-size: x-large;
+}
+
+.infoTitle {
+    padding: 20px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.dietDiv {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mealContainer {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.mealContainer h1 {
+    padding-bottom: 10px;
+}
+
+.mealContainer h5 {
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.dietTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    padding: 30px;
+    margin: 30px;
+}
+
+.bmiDiv {
+    font-size: xx-large;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.bmiInfos {
+    margin: 10px 0;
+    padding: 5px;
+}
