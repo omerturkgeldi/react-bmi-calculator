@@ -28,18 +28,17 @@ function CalculateBMI(props) {
   // Calculation
   function handleBmi(e) {
     e.preventDefault();
-    let bmi = (weight / (height * height)) * 10000;
-    setBmi(bmi.toFixed(2));
-    localStorage.setItem("bmi", bmi.toFixed(2));
+    if (weight !== 0 && height !== 0) {
+      let bmi = (weight / (height * height)) * 10000;
+      setBmi(bmi.toFixed(2));
+      localStorage.setItem("bmi", bmi.toFixed(2));
+    }
   }
 
   useEffect(() => {
-    if (bmi === 0) {
-      setStatus("");
-      setBmi("");
-    } else if (bmi <= 18.5) {
+    if (bmi > 0 && bmi < 18.5) {
       setStatus("Underweight");
-    } else if (bmi > 18.5 && bmi < 25) {
+    } else if (bmi >= 18.5 && bmi < 25) {
       setStatus("Normal weight");
     } else if (bmi >= 25 && bmi < 30) {
       setStatus("Overweight");
@@ -119,3 +118,4 @@ function CalculateBMI(props) {
 }
 
 export default CalculateBMI;
+
